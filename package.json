@@ -1,0 +1,33 @@
+{
+	"name": "nextjs-xbox-catalog",
+	"version": "0.0.0",
+	"description": "Clone of Xbox Games Catalog",
+	"repository": "git@github.com:akellbl4/nextjs-xbox-catalog.git",
+	"author": {
+		"name": "Pavel Mineev",
+		"email": "pavel@mineev.me",
+		"url": "https://pavel.mineev.me"
+	},
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"clsx": "^1.1.1",
+		"next": "11.0.1",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"swr": "^0.5.6"
+	},
+	"devDependencies": {
+		"@tailwindcss/line-clamp": "^0.2.1",
+		"autoprefixer": "^10.2.6",
+		"eslint": "^7.30.0",
+		"eslint-config-next": "^11.0.1",
+		"postcss": "^8.3.5",
+		"tailwindcss": "^2.2.4"
+	}
+}
