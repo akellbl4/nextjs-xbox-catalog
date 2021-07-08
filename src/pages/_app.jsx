@@ -5,6 +5,7 @@ export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
+				<title>Clone of Xbox Games Catalog</title>
 				<meta
 					name="description"
 					content="Clone of Xbox Game Catalog. Implemented with Next.js and Tailwind"

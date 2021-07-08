@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { fetchProducts } from 'lib/products'
 import Catalog from 'components/Catalog'
 
@@ -18,9 +17,6 @@ export async function getServerSideProps(ctx) {
 export default function Index({ products }) {
 	return (
 		<>
-			<Head>
-				<title>Xbox Games Catalog</title>
-			</Head>
 			<Catalog products={products} />
 			<footer className="mt-4 p-6 text-center leading-tight space-y-2">
 				<p>
