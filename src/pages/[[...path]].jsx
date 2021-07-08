@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { fetchProducts } from 'lib/products'
-import { Catalog } from 'components/Catalog'
+import Catalog from 'components/Catalog'
 
 export async function getServerSideProps(ctx) {
 	const products = await fetchProducts({

@@ -21,7 +21,7 @@ function getUrl(params, query) {
 	return `${url}${searchString.length !== 0 ? '?' + searchString : ''}`
 }
 
-export function Catalog({ products }) {
+export default function Catalog({ products }) {
 	const { pathname, params, query } = useRouter()
 	const url = getUrl(params, query)
 	const { data, isValidating } = useSWR(url, {
@@ -48,7 +48,7 @@ export function Catalog({ products }) {
 	}
 
 	return (
-		<main className="flex mx-6 my-8">
+		<main className="flex mx-6 my-8 min-w-[768px]">
 			<aside className="w-60 mr-12 flex-shrink-0">
 				<section className="mb-6">
 					<h3 className="text-2xl font-bold">Collections</h3>
